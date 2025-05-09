@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo barra de anuncios */
+.barraanuncios {
+    background-color: black; 
+    color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.625rem 0;
+    font-size: 1.5rem; 
+}
+
+/* Estilo rrss (primeras 3 columnas de la barra de anuncios) */
+.rrss-iconos {
+    color: white;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.625rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative; 
+}
+
+.rrss-iconos i {
+    font-size: 1.3rem; 
+    color: #ffffff; 
+    transition: color 0.3s ease;
+}
+
+.rrss-iconos:hover i {
+    color: #9c7945; 
+}
+
+.rrss-iconos:hover::after {
+    content: ""; 
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    height: 0.0625rem;
+    background-color: #9c7945; 
+    transition: all 0.3s ease; 
+}
+
+/* Estilo para el carrusel de anuncios (las 6 columnas de la barra de anuncios) */
+.carousel-text {
+    text-decoration: underline;
+    color: #ffffff; 
+    font-size: 1.1rem; 
+    margin-bottom: 0; 
+    cursor: pointer; 
+}
+
+.carousel-link {
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+.carousel-link:hover .carousel-text {
+    color: #9c7945; 
+    text-decoration: underline;
+}
+
+/* Estilo mini-menu (las ultimas 3 columnas de la barra de anuncios) */
+.mini-menu {
+    text-decoration: none; 
+    color: white; 
+    font-size: 1.1rem; 
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+  
+.mini-menu p {
+    margin: 0; 
+    color:white;
+}
+  
+.mini-menu:hover {
+    color: #9c7945; 
+}
+  
+.mini-menu:hover p {
+    text-decoration: underline;
+    color: #9c7945;
+}
+
+/* Estilo navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9375rem 1.25rem; 
+}
+
+.navbar.bg-transparent {
+    background-color: rgba(0, 0, 0, 0.5) !important; 
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand img {
+    color: #fff; 
+}
+
+.navbar .navbar-brand img {
+    max-height: 3.125rem; 
+}
+
+.nav-link:hover {
+    color: #9c7945 !important;
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+.dropdownColor{
+    background-color: #212529;
+}
+
+.dropdown-item{
+    color: black;
+    transition: font-weight 0.2s ease;
+}
+.dropdown-item:hover{
+    background-color: transparent;
+    color: #9c7945;
+    font-weight: bold;
+    text-decoration: underline; 
+}/* Estos tres dropdowns son para arreglar los colores y cambios del dropdown "Catálogo" */
+
+/* Estilo para el botón banner*/
+.btn-custom {
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem; 
+    border: 2px solid #D4AF37; 
+    background-color: transparent;
+    color: #D4AF37;
+    border-radius: 0px; 
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    color: white; 
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.6); 
+}
+
+/* Estilo para los iconos del buscador, carro y cuenta */
+.icon-group {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; 
+    position: relative; 
+}
+  
+.icon-group i {
+    color: white;
+    position: relative;
+    font-size: 1.5rem; 
+    cursor: pointer; 
+    transition: color 0.3s, background-color 0.3s;
+}
+  
+.icon-group i:hover {
+    color: #9c7945; 
+    text-decoration: underline; 
+    padding: 0; 
+    border-radius: 0; 
+}
+
+.icon-group i:hover::after {
+    content: ""; 
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    height: 0.0625rem;
+    background-color: #9c7945; 
+    transition: all 0.3s ease; 
+}
+
+/* Buscador */
+.search-input {
+    display: none;
+    width: 150px;
+    transition: all 0.3s ease;
+}
+
+.search-input.active {
+    display: inline-block;
+    color: white;
+}
+
+.search-link:hover i,
+.cart-link:hover i,
+.user-link:hover i {
+    color: #9c7945 
+}
+
+/* Estilo ventana lateral carrito de compra*/
+.custom-offcanvas {
+    background-color: black; 
+    color: white;
+}
+  
+.custom-offcanvas .offcanvas-header {
+    border-bottom: none;
+}
+  
+.custom-offcanvas .btn-close {
+    filter: invert(1);
+}
+  
+.custom-offcanvas h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+  
+/* Botón de "Seguir comprando" */
+.custom-offcanvas .btn-outline-light {
+    border-color: white;
+    color: white;
+}
+  
+.custom-offcanvas .btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
+  
+.custom-offcanvas .link-highlight {
+    color: #ffd700;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+.custom-offcanvas .link-highlight:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+  
+.custom-offcanvas .offcanvas-body p {
+    margin-top: 1rem;
+    font-size: 1rem;
+} 
+
+/* Video */
+.video-section {
+    position: relative;
+    overflow: hidden; 
+}
+  
+.video-section video {
+    width: 100%; 
+    height: auto;
+}
+  
+.video-banner {
+    z-index: 1; 
+    pointer-events: none; 
+}
+  
+/* Historia */
+.about-story img {
+    border: 5px solid #f8f9fa;
+}
+
+.about-title {
+    font-size: 3rem; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 50px; 
+    color: black; 
+}
+
+/* Materiles */
+.materials-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+  
+.materials-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+  
+.materials-description {
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.materials-icon {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto 15px;
+    background-color: #ddd; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+  
+.materials-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; 
+}
+  
+.materials-item-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+  
+.materials-item-description {
+    font-size: 1rem;
+    color: black;
+}  
+  
+/* Misión */
+.about-mission {
+    color: #ddd;
+    padding: 50px 0;
+}
+
+/* Imagen y productos */
+.img-fluid {
+    height: 100%; 
+    object-fit: cover; 
+}
+  
+.card {
+    border-radius: 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.card-body {
+    padding: 10px;
+}
+
+/* Equipo */
+.about-team img {
+    max-width: 200px; 
+    height: auto; 
+    border: 3px solid #ddd; 
+    transition: transform 0.3s ease; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+.about-team img:hover {
+    transform: scale(1.1); 
+}
+
+.about-team h5 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    text-align: center; 
+}
+
+.about-team p {
+    font-size: 1rem solid;
+    text-align: center; 
+}
+  
+/* Footer + popup suscripción*/
+.footer {
+    background-color: black; 
+    color: #fff; 
+    padding: 50px 20px;
+    position: relative;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #9c7945;
+    text-decoration: underline;
+}
+
+.footer-icons a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-icons a:hover {
+    color: #9c7945;
+}
+
+.footer-bottom {
+    border-top: 1px solid #D4AF37;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#map-container {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    margin-top: 15px; 
+}
+
+.payment-icon {
+    width: 50px; 
+    height: 50px; 
+    object-fit: contain;
+    margin-left: 7px; 
+    margin-right: 7px; 
+}
+
+.payment-icon:first-child {
+    margin-left: 0; 
+}
+
+/* Contenedor de la imagen en el popup */
+.popup-image-container {
+    width: 400px; 
+    height: 400px; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+    background-color: #f3f3f3; 
+}
+
+.popup-image-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.popup-content {
+    flex-grow: 1; 
+    text-align: center;
+}
+
+.modal-content {
+    width: 600px;
+    display: flex;
+    flex-direction: row; 
+    border-radius: 10px; 
+}
+
+.modal-content .btn-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+

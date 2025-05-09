@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NB-Akira</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Akira.css">
+    <link rel="icon" href="Imagenes/nb-akira-favicon-color2.png">
+  </head>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    
+    <div class="container-fluid">
+
+    <header class="header">
+      <!-- Barra de anuncios -->
+      <div class="barraanuncios container-fluid text-center">
+        <div class="row align-items-center">
+          <!-- Íconos rrss sociales -->
+          <div class="col-3 d-flex justify-content-center ">
+            <a href="https://www.facebook.com/NBAkiraStore/" title="Facebook" class="rrss-iconos" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/nbakirastore/" title="Instagram" class="rrss-iconos" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.pinterest.es/nbakirastore/" title="Pinterest" class="rrss-iconos" target="_blank">
+              <i class="bi bi-pinterest"></i>
+            </a>
+            <a href="https://www.tiktok.com/@nbakira7" title="TikTok" class="rrss-iconos" target="_blank">
+              <i class="bi bi-tiktok"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCsQ1uK-OdZNOOMBlrB840qw" title="YouTube" class="rrss-iconos" target="_blank">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+
+          <!--Carrusel anuncios--> 
+          <div class="col-6 d-flex align-items-center justify-content-center">
+            <div id="carouselExampleSlidesOnly" class="carousel slide text-center" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="Productos.html" title="All Products" class="carousel-link" target="_blank">
+                    <p class="carousel-text">
+                      <strong>¡Suscríbete</strong> y Ahorra un 10% en tu Primera Compra!
+                    </p>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="Productos.html" title="All Products" class="carousel-link" target="_blank">
+                    <p class="carousel-text">
+                      <strong>¡Envios Gratis</strong> en Enero!
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mini-menu -->               
+          <div class="col-3 d-flex align-items-center justify-content-start">
+            <a href="Faqs.html" title="Preguntas Frecuentes" class="mini-menu mx-2" target="_blank">
+              <p>Faq</p>
+            </a>
+            <a href="Contactenos.html" title="Contáctenos" class="mini-menu mx-2" target="_blank">
+              <p>Contáctenos</p>
+            </a>
+          </div>                       
+        </div>
+      </div>
+        
+      <!-- Navbar -->
+      <div class="video-container position-relative">
+        <video src="Imagenes/reloj-Pandu.mp4" type="video/mp4" class="w-100 h-100" autoplay muted loop></video>
+        <div class="position-absolute top-50 start-50 translate-middle">
+          <a href="Productos.html" class="btn btn-custom" target="_blank">Ver Productos</a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 w-100">
+          <div class="container-fluid">
+            <div class="row w-100 align-items-center">
+              <!-- Columna del logo -->
+              <div class="col-3 col-md-2 text-start">
+                <a class="navbar-brand" href="Akira.html">
+                  <img src="imagenes/logo-no-background.png" alt="Logo" class="img-fluid">
+                </a>
+              </div>
+              <!-- Columna del menú -->
+              <div class="col-6 col-md-8 text-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="Akira.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Catálogo
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Productos.html" target="_blank">Automáticos</a></li>
+                        <li><a class="dropdown-item" href="Productos.html" target="_blank">Mecánicos</a></li>
+                        <li><a class="dropdown-item" href="Productos.html" target="_blank">Cronógrafos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Productos.html" target="_blank">Ofertas especiales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Nosotros.html" target="_blank">Nosotros</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Columna del buscador e íconos -->
+              <div class="col-3 col-md-2 text-end">
+                <form class="d-flex align-items-center justify-content-center icon-group" role="search">
+                  <input class="form-control me-2 search-input" type="search" placeholder="Buscador" aria-label="Search">
+                  <i class="bi bi-search search-icon"></i>
+                  <a href="CuentaCliente.html"><i class="bi bi-person-fill"></i></a>
+                  <!-- Ícono del carrito -->
+                  <a href="CarritodeCompra.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                    <i class="bi bi-cart4"></i>
+                  </a>
+                </form>
+              </div>              
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Ventana lateral carrito de compra -->
+      <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center">
+          <h3>Tu carrito está vacío</h3>
+          <a href="Productos.html" class="btn btn-outline-light mt-3">Seguir comprando</a>
+          <div class="mt-4">
+            <p class="mb-1">¿Tienes una cuenta?</p>
+            <a href="CuentaCliente.html" class="link-highlight">Inicia sesión</a>
+            <p>para finalizar tus compras con mayor rapidez.</p>
+          </div>
+        </div>
+      </div>          
+    </header> 
+    <main>
+      <!-- Carrusel texto -->
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <span>Feel Authentic</span>
+                <span class="icon-star">✶</span>
+                <span>Feel Trendy</span>
+                <span class="icon-star">✶</span>
+                <span>Feel Authentic</span>
+                <span class="icon-star">✶</span>
+                <span>Feel Trendy</span>
+              </div>
+              <div class="carousel-content">
+                <span>Feel Authentic</span>
+                <span class="icon-star">✶</span>
+                <span>Feel Trendy</span>
+                <span class="icon-star">✶</span>
+                <span>Feel Authentic</span>
+                <span class="icon-star">✶</span>
+                <span>Feel Trendy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contenedor texto1 -->
+      <div class="container-fluid text-center text-section">
+          <div class="row">
+            <div class="col-12">
+              <div class="card text-center">
+                <div class="card-body">
+                  <hr>
+                  <h5 class="card-title">Tu estilo, tu hora, tu reloj.</h5>
+                  <p class="card-text">No solo llevas un reloj, llevas una declaración de estilo y elegancia.</p>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <!-- Nuevos Productos (circulos) -->
+      <div class="container-fluid text-center text-section">
+        <h2 class="text-center mb-4 novedades-title">Novedades</h2>
+        <br>
+        <div class="deal-container">
+            <div class="deal-item">
+                <div class="circle-icon">
+                    <img src="Imagenes/Men's_Planet1.jpg" alt="Kalunya - Men's Planet">
+                </div>
+                <h5 class="mt-3">Kalunya - Men's Planet</h5>
+                <a href="Detalles-VerProductos.html" class="deal-link" target="_blank">Ver Producto →</a>
+            </div>
+            <div class="deal-item">
+                <div class="circle-icon position-relative">
+                    <img src="Imagenes/Rainbow_2.jpg" alt="Rainbow">
+                </div>
+                <h5 class="mt-3">Dulunwe - Rainbow</h5>
+                <a href="Productos.html" class="deal-link" target="_blank">Ver Producto →</a>
+            </div>
+            <div class="deal-item">
+                <div class="circle-icon">
+                    <img src="Imagenes/reloj_ailang1.jpg" alt="Ailang">
+                </div>
+                <h5 class="mt-3">Ailang</h5>
+                <a href="Productos.html" class="deal-link" target="_blank">Ver Producto →</a>
+            </div>
+            <div class="deal-item">
+                <div class="circle-icon">
+                    <img src="Imagenes/reloj_Longlux1.jpg" alt="Longlux">
+                </div>
+                <h5 class="mt-3">Longlux</h5>
+                <a href="Productos.html" class="deal-link" target="_blank">Ver Producto →</a>
+            </div>
+        </div>
+      </div>
+      <!-- Producto individual 1 -->
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-12 col-md-6">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Imagenes/reloj_lige_crono7.jpg" class="d-block w-100" alt="LIGE">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/reloj_lige_crono12.jpg" class="d-block w-100" alt="LIGE">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/reloj_lige_crono8.jpg" class="d-block w-100" alt="LIGE">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Reloj de pulsera automático</h2>
+                <p>
+                    Un reloj de alta precisión con un diseño minimalista y moderno. Materiales de alta calidad para durabilidad y estilo.
+                </p>
+                <div class="mb-3">
+                    <h6>Estilo</h6>
+                    <button type="button" class="btn btn-outline-dark btn-sm">Negro</button>
+                    <button type="button" class="btn btn-outline-dark btn-sm">Dorado</button>
+                    <button type="button" class="btn btn-outline-dark btn-sm">Plateado</button>
+                </div>
+                <h4 class="fw-bold">199.99 €<small class="text-muted ms-2"><del>250.00 €</del></small></h4>
+                <p class="text-success">Ahorras 50.01 €</p>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="input-group me-3" style="width: 120px;">
+                        <button class="btn btn-outline-secondary" type="button" onclick="decreaseQuantity()">-</button>
+                        <input type="text" class="form-control text-center" value="1" id="quantity" readonly>
+                        <button class="btn btn-outline-secondary" type="button" onclick="increaseQuantity()">+</button>
+                    </div>
+                    <a href="CarritodeCompra.html" button class="btn btn-dark me-2">Añadir al carrito</button></a>
+                    <button class="btn btn-outline-dark">Comprar ahora</button>
+                </div>
+                <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                  <a href="Detalles-Productos.html" class="deal-link" target="_blank">Ver Detalles →</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- Temporizador -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 temporizador-tmp">
+            <video autoplay muted loop class="temporizador-video">
+              <source src="Imagenes/pindu-azul.mp4" type="video/mp4">
+              Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="temporizador-overlay"></div>
+            <div class="temporizador-content">
+              <h1>¡Prepárate! Nuestra mayor venta de relojes para hombres empieza en...</h1>
+              <div class="countdown-timer d-flex justify-content-center gap-4 mt-4">
+                <div>
+                  <span id="hours">00</span>
+                  <div class="countdown-label">HORAS</div>
+                </div>
+                <div>
+                  <span id="minutes">00</span>
+                  <div class="countdown-label">MINUTOS</div>
+                </div>
+                <div>
+                  <span id="seconds">00</span>
+                  <div class="countdown-label">SEGUNDOS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Descubre más -->
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 discovers-section">
+            <div class="discovers-image">
+              <img src="Imagenes/img_reloj.jpg" alt="Reloj">
+            </div>
+            <div class="discovers-title">
+              Elegante. Funcional. Calidad.
+            </div>
+            <div class="discovers-subtitle">
+              Nuestro objetivo es proporcionar productos que resistan la prueba del tiempo.
+            </div>
+            <a href="DescubreMas.html" button class="btn btn-discover" target="_blank">Descubre más</button></a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Banner integrado -->
+      <div class="high-quality">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-8"></div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Productos Fila 1 -->  
+      <div class="container-products text-center">
+        <div class="row">
+            <div class="col">
+                <div class="product">
+                    <img src="Imagenes/Lige_3.jpg" alt="LIGE" class="product__img">
+                    <img src="Imagenes/watch1.jpg" alt="LIGE" class="product__img-hover">
+                    <product__description>
+                        <h3 class="product__title">Reloj LIGE</h3>
+                        <span class="product__price">175.00 €</span>
+                    </product__description>
+                </div>
+              <a href="CarritodeCompra.html"
+                <button type="button" class="btn btn-outline-success btn-product">Añadir al carrito</button>
+              </a>
+            </div>
+            <div class="col">
+                <div class="product">
+                    <img src="Imagenes/Ailang_skeleton14.jpg" alt="AILANG" class="product__img">
+                    <img src="Imagenes/Ailang_skeleton2.jpg" alt="AILANG" class="product__img-hover">
+                    <product__description>
+                        <h3 class="product__title">Reloj AILANG</h3>
+                        <span class="product__price">175.00 €</span>
+                    </product__description>
+                </div>   
+                <button type="button" class="btn btn-outline-success btn-product">Añadir al carrito</button>
+            </div>
+            <div class="col">
+                <div class="product">
+                  <img src="Imagenes/reloj_skrox4.jpg" alt="SKROX" class="product__img">
+                  <img src="Imagenes/reloj_skrox3.jpg" alt="SKROX" class="product__img-hover">
+                    <product__description>
+                        <h3 class="product__title">Reloj SKROX</h3>
+                        <span class="product__price">175.00 €</span>
+                    </product__description>
+                </div>   
+                <button type="button" class="btn btn-outline-success btn-product">Añadir al carrito</button>
+            </div>
+            <div class="col">
+                <div class="product">
+                    <img src="Imagenes/reloj_pagani7.jpg" alt="PAGANI" class="product__img">
+                    <img src="Imagenes/reloj_pagani2.jpg" alt="PAGANI" class="product__img-hover">
+                    <product__description>
+                        <h3 class="product__title">Reloj PAGANI</h3>
+                        <span class="product__price">175.00 €</span>
+                    </product__description>
+                </div>   
+                <button type="button" class="btn btn-outline-success btn-product">Añadir al carrito</button>
+            </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Productos Fila 2 -->  
+      <div class="container-products text-center">
+        <div class="row">
+            <div class="col">
+                <div class="product">
+                    <img src="Imagenes/Lige_3.jpg" alt="LIGE" class="product__img">
+                    <img src="Imagenes/watch1.jpg" alt="LIGE" class="product__img-hover">
+                    <product__description>
+                        <h3 class="product__title">Reloj LIGE</h3>
+                        <span class="product__price">175.00 €</span>
+                    </product__description>
+                </div>
+                <button type="button" class="btn btn-outline-success btn-product">Añadir al carrito</button>
+            </div>
+            <div class="col">
+                <div class="product">
+                  <img src="Imagenes/Ailang_skeleton14.jpg" alt="AILANG" class="product__img">
+                  <img src="Imagenes/Ailang_skeleton2.jpg" alt="AILANG" class="product__img-hover">
+                    <product__description>
+                        <h3 class="product__title">Reloj AILANG</h3>
+                        <span class="product__price">175.00 €</span>
+                    </product__description>
+                </div>      
+                <button type="button" class="btn btn-outline-success btn-product">Añadir al carrito</button>
+            </div>
+            <div class="col">
+                <div class="product">
+                    <img src="Imagenes/reloj_skrox4.jpg" alt="SKROX" class="product__img">
+                    <img src="Imagenes/reloj_skrox3.jpg" alt="SKROX" class="product__img-hover">
+                    <product__description>
+                        <h3 class="product__title">Reloj SKROX</h3>
+                        <span class="product__price">175.00 €</span>
+                    </product__description>
+                </div>
+                <button type="button" class="btn btn-outline-success btn-product">Añadir al carrito</button>
+            </div> 
+            <div class="col">
+                <div class="product">
+                    <img src="Imagenes/reloj_pagani7.jpg"" alt="PAGANI" class="product__img">
+                    <img src="Imagenes/reloj_pagani2.jpg" alt="PAGANI" class="product__img-hover">
+                    <product__description>
+                        <h3 class="product__title">Reloj PAGANI</h3>
+                        <span class="product__price">175.00 €</span>
+                    </product__description>
+                </div> 
+                <button type="button" class="btn btn-outline-success btn-product">Añadir al carrito</button>
+            </div>
+        </div>
+      </div>
+      <!-- Anuncio Rebajas de invierno-->
+      <div class="container-fluid sale-section">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="sale-container">
+              <div>
+                <div class="sale-title">Rebajas de invierno</div>
+              </div>
+              <div class="sale-divider"></div>
+              <div>
+                <p class="sale-text">
+                  Obtenga hasta un 50 % de descuento en una variedad de productos en nuestras rebajas de fin de temporada.<br>
+                  Todas las ventas finales: ¡terminan pronto!
+                </p>
+                <a href="Productos.html" class="shop-btn" target="_blank">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Producto individual 2 -->
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-12 col-md-6">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Imagenes/Lige_a4.jpg" class="d-block w-100" alt="LIGE">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/Lige_a5.jpg" class="d-block w-100" alt="LIGE">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/Lige-a1.jpg" class="d-block w-100" alt="LIGE">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Reloj de pulsera automático</h2>
+                <p>
+                    Un reloj de alta precisión con un diseño minimalista y moderno. Materiales de alta calidad para durabilidad y estilo.
+                </p>
+                <div class="mb-3">
+                    <h6>Estilo</h6>
+                    <button type="button" class="btn btn-outline-dark btn-sm">Negro</button>
+                    <button type="button" class="btn btn-outline-dark btn-sm">Dorado</button>
+                    <button type="button" class="btn btn-outline-dark btn-sm">Plateado</button>
+                </div>
+                <h4 class="fw-bold">199.99 €<small class="text-muted ms-2"><del>250.00 €</del></small></h4>
+                <p class="text-success">Ahorras 50.01 €</p>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="input-group me-3" style="width: 120px;">
+                        <button class="btn btn-outline-secondary" type="button" onclick="decreaseQuantity()">-</button>
+                        <input type="text" class="form-control text-center" value="1" id="quantity" readonly>
+                        <button class="btn btn-outline-secondary" type="button" onclick="increaseQuantity()">+</button>
+                    </div>
+                    <a href="CarritodeCompra.html" button class="btn btn-dark me-2">Añadir al carrito</button></a>
+                    <button class="btn btn-outline-dark">Comprar ahora</button>
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                  <span class="share-link-share me-3">Compartir →</span>
+                  <div class="footer-icons-share">
+                    <a href="https://www.instagram.com/nbakirastore/" target="_blank" class="me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@nbakira7" target="_blank" class="me-2"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.facebook.com/NBAkiraStore/" target="_blank" class="me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.pinterest.es/nbakirastore/" target="_blank" class="me-2"><i class="bi bi-pinterest"></i></a>
+                    <a href="https://www.youtube.com/channel/UCsQ1uK-OdZNOOMBlrB840qw" target="_blank" class="me-2"><i class="bi bi-youtube"></i></a>
+                  </div>
+                </div>    
+            </div>
+        </div>
+      </div>
+        <!-- Contenedor texto2 -->
+      <div class="container-fluid text-center text-section bg-light-gray">
+          <div class="row">
+            <div class="col-12">
+              <div class="card text-center">
+                <div class="card-body">
+                  <hr>
+                  <h5 class="card-title">"Lige: Precisión y Estilo para Hombres Audaces."</h5>
+                  <p class="card-text">Lige combina la sofisticación moderna con tecnología avanzada en cada reloj. Diseñados para hombres que valoran tanto la funcionalidad como la estética, los relojes Lige son el equilibrio perfecto entre elegancia y rendimiento.</p>
+                  <hr>  
+                </div>
+              </div>
+            </div>
+          </div>
+      </div> 
+        <!-- Banner pequeño -->
+      <div class="banner">
+          <div class="container-fluid p-0">
+              <div class="row g-0">
+                  <div class="col-12"></div>
+              </div>
+          </div>
+      </div>
+        <!--Las 3 Tarjetas -->
+      <div class="container-fluid text-center bg-light-gray">
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col-4 align-items-center">
+                <div class="card">
+                    <img src="Imagenes/reloj_lige15.jpg" class="card-img-top1" alt="LIGE">
+                    <div class="card-body">
+                        <h5 class="card-title">Función y apariencia en perfecta fusión</h5>
+                        <p class="card-text">Con un diseño que destaca por su gran campo de visión, este cronógrafo combina funcionalidad y estilo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 align-items-center">
+                <div class="card">
+                    <img src="Imagenes/reloj_lige11.jpg" class="card-img-top1" alt="LIGE">
+                    <div class="card-body">
+                        <h5 class="card-title">El gran campo de visión hace una gran diferencia</h5>
+                        <p class="card-text">Sus biseles estrechos de solo 1,79 mm y su caja amplia de 45,7 mm ofrecen un diseño limpio y una presencia imponente en la muñeca.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 align-items-center">
+                <div class="card">
+                    <img src="Imagenes/reloj_lige16.jpg" class="card-img-top1" alt="LIGE">
+                    <div class="card-body">
+                        <h5 class="card-title">Botones multifunción:</h5>
+                        <p class="card-text">1. Botón de reinicio del cronógrafo<br> 2. Un nivel para ajustar el calendario <br> 3. Dos niveles de tiempo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+        <!-- Banda -->
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="custom-carousel-container">
+                <!-- Primera línea del carrusel -->
+                <div class="custom-carousel-content">
+                  <span>Relojes Automáticos</span>
+                  <i class="bi bi-watch custom-icon-large"></i>
+                  <span>Relojes Mecánicos</span>
+                  <i class="bi bi-watch custom-icon-large"></i>
+                  <span>Relojes de Lujo</span>
+                  <i class="bi bi-watch custom-icon-large"></i>
+                  <span>Relojes Cronógrafos</span>
+                </div>
+                <!-- Segunda línea del carrusel -->
+                <div class="custom-carousel-content">
+                  <i class="bi bi-watch custom-icon-large"></i>
+                  <span>Relojes Automáticos</span>
+                  <i class="bi bi-watch custom-icon-large"></i>
+                  <span>Relojes Mecánicos</span>
+                  <i class="bi bi-watch custom-icon-large"></i>
+                  <span>Relojes de Lujo</span>
+                  <i class="bi bi-watch custom-icon-large"></i>
+                  <span>Relojes Cronógrafos</span>
+                </div>
+                <div class="custom-carousel-content">
+                  <i class="bi bi-watch custom-icon-large"></i>
+                  <span>Relojes Automáticos</span>
+                  <i class="bi bi-watch custom-icon-large"></i>
+                  <span>Relojes Mecánicos</span>
+                  <i class="bi bi-watch custom-icon-large"></i>
+                  <span>Relojes de Lujo</span>
+                  <i class="bi bi-watch custom-icon-large"></i>
+                  <span>Relojes Cronógrafos</span>
+                </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+        <!-- Tipos de Relojes -->
+      <div class="container-fluid py-5 bg-light-gray">
+        <div class="row align-items-center">
+          <div class="col-md-4 section-header text-hover">
+            <h2>Tipos de Relojes</h2>
+            <p>Explora nuestras colecciones de relojes diseñados para cada estilo y ocasión.</p>
+          </div>        
+            <div class="col-md-8 position-relative">
+                <div class="nav-arrows">
+                    <button id="prevBtn">&#8249;</button>
+                    <button id="nextBtn">&#8250;</button>
+                </div>
+                <div class="scroll-container" id="scrollContainer">
+                    <!-- Tarjeta 1 -->
+                    <div class="card-custom text-center">
+                        <img src="Imagenes/relojForsining2.jpg" alt="Reloj Automático">
+                        <div class="p-3">
+                            <h5>Relojes Automáticos</h5>
+                            <p>Relojes que funcionan con el movimiento natural de tu muñeca.</p>
+                        </div>
+                        <a href="Relojes_Automáticos.html" class="deal-link" target="_blank">Ver más Detalles →</a>
+                    </div>
+                    <!-- Tarjeta 2 -->
+                    <div class="card-custom text-center">
+                        <img src="Imagenes/reloj-longlux4.jpg" alt="Reloj Mecánico Manual">
+                        <div class="p-3">
+                            <h5>Relojes Mecánicos</h5>
+                            <p>Relojes que requieren cuerda manual para el funcionamiento.</p>
+                        </div>
+                        <a href="Relojes_Mecanicos.html" class="deal-link" target="_blank">Ver más Detalles →</a>
+                    </div>
+                    <!-- Tarjeta 3 -->
+                    <div class="card-custom text-center">
+                      <img src="Imagenes/reloj-pandu10.jpg" alt="Reloj de Lujo">
+                      <div class="p-3">
+                          <h5>Relojes de Lujo</h5>
+                          <p>Diseños exclusivos con materiales de alta gama y precisión.</p>
+                      </div>
+                      <a href="Relojes-deLujo.html" class="deal-link" target="_blank">Ver más Detalles →</a>
+                    </div>
+                    <!-- Tarjeta 4 -->
+                    <div class="card-custom text-center">
+                        <img src="Imagenes/reloj_lige-crono2.jpg" alt="Cronógrafos">
+                        <div class="p-3">
+                            <h5>Relojes Cronógrafos</h5>
+                            <p>Relojes con funciones de cronómetro y medición precisa del tiempo.</p>
+                        </div>
+                        <a href="Relojes_Cronografos.html" class="deal-link" target="_blank">Ver más Detalles →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>    
+        <!-- Símbolos de venta -->
+      <div class="container-fluid my-5 features-section">
+        <div class="row text-center">
+            <!-- 1º símbolo -->
+            <div class="col-md-4 d-flex align-items-center justify-content-center flex-column">
+                <div class="icon mb-3">
+                    <i class="bi bi-truck"></i>
+                </div>
+                <h5 class="feature-title">Envío y devoluciones gratis</h5>
+                <p class="feature-text">Disfrute del envío gratuito gratuito. Aprovecha nuestra oferta de envío gratis.</p>
+            </div>
+            <!-- 2º símbolo -->
+            <div class="col-md-4 d-flex align-items-center justify-content-center flex-column">
+                <div class="icon mb-3">
+                    <i class="bi bi-credit-card"></i>
+                </div>
+                <h5 class="feature-title">Garantía de devolución de dinero</h5>
+                <p class="feature-text">Contáctenos las 24 horas del día. Nuestro equipo de atención al cliente está disponible las 24 horas del día.</p>
+            </div>
+            <!-- 3º símbolo -->
+            <div class="col-md-4 d-flex align-items-center justify-content-center flex-column">
+                <div class="icon mb-3">
+                    <i class="bi bi-wallet2"></i>
+                </div>
+                <h5 class="feature-title">Soporte en línea 24/7</h5>
+                <p class="feature-text">Pago seguro. Asegure su pago con nuestro sistema de pago confiable.</p>
+            </div>
+        </div>
+      </div>    
+    </main>
+      <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fluid">
+          <div class="row">
+              <!-- Parte izquierda -->
+              <div class="col-md-5 text-md-start">
+                <h6 class="text-uppercase fw-bold mb-4">Nuestra ubicación</h6>
+                <!-- Mapa de localización -->
+                <div id="map-container">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345094766!2d-122.41941568468274!3d37.77492927975995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e0b68b71%3A0x4425b15a8a8d4c71!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1616166161616!5m2!1sen!2sus"
+                    width="400"
+                    height="200"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>              
+              <!-- Parte central -->
+              <div class="col-md-3 text-md-star">
+                  <h6>Ayuda</h6>
+                  <ul class="list-unstyled">
+                      <li><a href="Faqs.html" target="_blank">FAQ</a></li>
+                      <li><a href="Contactenos.html" target="_blank">Contacto</a></li>
+                      <li><a href="Productos.html" target="_blank">Rebajas</a></li>
+                  </ul>
+                  <br>
+                  <h6 class="mt-3">Descubre</h6>
+                  <ul class="list-unstyled">
+                      <li><a href="Nosotros.html" target="_blank">Sobre Nosotros</a></li>
+                      <li><a href="#">Devoluciones y reembolsos</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                  </ul>
+              </div>
+              <!-- Parte derecha -->
+              <div class="col-md-4 text-md-end">
+                  <h6>SUSCRÍBETE PARA OFERTAS Y OBTÉN UN 10% DE DESCUENTO</h6>
+                  <form class="footer-bottom">
+                    <input type="email" class="form-control me-2" placeholder="Nombre">
+                    <br>
+                    <input type="email" class="form-control me-2" placeholder="Correo electrónico">
+                  </form>
+                  <br>
+                  <button class="btn btn-outline-light type="submit">→</button>
+                  <br>
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col-md-6 footer-icons">
+                  <a href="https://www.instagram.com/nbakirastore/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.tiktok.com/@nbakira7" target="_blank"><i class="bi bi-tiktok"></i></a>
+                  <a href="https://www.facebook.com/NBAkiraStore/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.pinterest.es/nbakirastore/" target="_blank"><i class="bi bi-pinterest"></i></a>
+                  <a href="https://www.youtube.com/channel/UCsQ1uK-OdZNOOMBlrB840qw" target="_blank"><i class="bi bi-youtube"></i></a>
+              </div>
+              <div class="col-md-6 text-md-end">
+                  <img src="Imagenes/visa.png" alt="Visa" class="payment-icon">
+                  <img src="Imagenes/master.png" alt="MasterCard" class="payment-icon">
+                  <img src="Imagenes/amex.png" alt="Amex" class="payment-icon">
+                  <img src="Imagenes/paypal.png" alt="PayPal" class="payment-icon"> 
+              </div>            
+          </div>
+          <div class="footer-bottom mt-4">
+              <p>Spain (EUR €) | © 2025, NB-Akira.</p>
+          </div>
+      </div>
+      <!-- Popup Modal -->
+      <div class="modal fade" id="subscriptionPopup" tabindex="-1" aria-labelledby="subscriptionPopupLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div class="d-flex">
+              <div class="popup-image-container">
+                <img src="Imagenes/Rainbow_5.jpg" alt="Promoción Especial" class="img-fluid">
+              </div>
+
+              <div class="popup-content text-center p-3 flex-grow-1">
+                <h2>Suscríbete a nuestro boletín</h2>
+                <p>Sea el primero en enterarse de ventas, ofertas exclusivas y promociones.</p>
+
+                <form>
+                  <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Introduce tu correo electrónico" required>
+                    <button class="btn btn-dark" type="submit">Inscribirse</button>
+                  </div>
+                </form>
+
+                <div class="social-icons mt-3">
+                  <a href="https://www.facebook.com/NBAkiraStore/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/nbakirastore/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.youtube.com/channel/UCsQ1uK-OdZNOOMBlrB840qw" target="_blank"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <script>
+        // Buscador
+        const searchIcon = document.querySelector('.search-icon');
+        const searchInput = document.querySelector('.search-input');
+        searchIcon.addEventListener('click', () => {
+        searchInput.classList.toggle('active'); 
+        });
+      </script>
+      <script>
+        // Popup 
+            window.addEventListener('load', function () {
+          const subscriptionPopup = new bootstrap.Modal(document.getElementById('subscriptionPopup'));
+          const isPopupClosed = localStorage.getItem('popupClosed');
+          if (!isPopupClosed) {
+            setTimeout(function () {
+              subscriptionPopup.show();
+            }, 3000);
+          }
+          document.getElementById('subscriptionPopup').addEventListener('hidden.bs.modal', function () {
+            localStorage.setItem('popupClosed', 'true');
+          });
+        });
+      </script>
+      <script>
+          // Suscripción 
+        (() => {
+          'use strict'
+          const forms = document.querySelectorAll('.needs-validation')
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+      </script>
+      <script>
+        // Carrito de compra en horizontal
+        const scrollContainer = document.getElementById("scrollContainer");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");  
+        prevBtn.addEventListener("click", () => {
+            scrollContainer.scrollBy({ left: -300, behavior: "smooth" });
+        });
+        nextBtn.addEventListener("click", () => {
+            scrollContainer.scrollBy({ left: 300, behavior: "smooth" });
+        });
+    </script>
+    <script>
+      // Temporizador inico
+      const targetDate = new Date();
+      targetDate.setMinutes(targetDate.getMinutes() + 52); 
+      targetDate.setSeconds(targetDate.getSeconds() + 45); 
+      function updateCountdown() {
+          const now = new Date();
+          const timeDifference = targetDate - now;
+
+          if (timeDifference <= 0) {
+              document.getElementById('hours').textContent = "00";
+              document.getElementById('minutes').textContent = "00";
+              document.getElementById('seconds').textContent = "00";
+              clearInterval(timerInterval);
+              return;
+          }
+
+          const hours = String(Math.floor(timeDifference / (1000 * 60 * 60))).padStart(2, '0');
+          const minutes = String(Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+          const seconds = String(Math.floor((timeDifference % (1000 * 60)) / 1000)).padStart(2, '0');
+
+          document.getElementById('hours').textContent = hours;
+          document.getElementById('minutes').textContent = minutes;
+          document.getElementById('seconds').textContent = seconds;
+      }
+      const timerInterval = setInterval(updateCountdown, 1000);
+      updateCountdown();
+    </script>
+    </div>
+  </body>
+</html>
