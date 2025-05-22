@@ -191,11 +191,18 @@
     display: none;
     width: 150px;
     transition: all 0.3s ease;
+    color: black;
+    background-color: white; /* para garantizar contraste */
+    border: 1px solid #ccc; /* opcional, para que se note el input */
+    padding: 0.3em 0.5em; /* para comodidad */
+    border-radius: 3px;
 }
 
 .search-input.active {
     display: inline-block;
-    color: white;
+    color: black;
+    background-color: white;
+    
 }
 
 .search-link:hover i,
