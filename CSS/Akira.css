@@ -1,10 +1,12 @@
+html {
+    overflow-x: hidden;
+}
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 /* Estilo barra de anuncios */
@@ -274,6 +276,29 @@ body {
     object-fit: cover; 
 }
 
+/* === CAMBIOS SOLO PARA MÓVIL === */
+@media screen and (max-width: 600px) {
+/* Barra de anuncios en fila, sin saltos y con scroll horizontal */
+.barraanuncios {
+    display: flex !important;        /* fuerza flex solo en móvil */
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    gap: 1rem !important;
+    white-space: nowrap !important;
+}
+
+/* Los enlaces dentro de la barra, que no se encojan */
+.barraanuncios a {
+    flex-shrink: 0 !important;
+}
+
+/* Logo más grande */
+.navbar-brand img {
+    max-height: 5rem !important;
+    transition: max-height 0.3s ease;
+}
+}
+
 /*Carrusel texto*/
 .carousel-container {
     position: relative;
@@ -347,6 +372,13 @@ body {
     }
 }
 
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 100px; /* Aumenta este valor si quieres más grande */
+  }
+}
+
+
 /* Estilo contenedor texto1 y texto2 */
 .text-section {
     width: 100%;
@@ -385,16 +417,6 @@ body {
 }
 
 /* Estilo de las Novedades (circulos) */
-.deal-container {
-    width: 100%;
-    height: auto;
-    background-color: #F3F3F3;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    gap: 25px; 
-}
-
 .novedades-title {
     font-size: 2rem;
     font-weight: bold;
@@ -407,56 +429,49 @@ body {
 @keyframes appearAndAssemble {
     0% {
         opacity: 0;
-        letter-spacing: 1rem; 
-        transform: scale(0.8); 
+        letter-spacing: 1rem;
+        transform: scale(0.8);
     }
     50% {
         opacity: 1;
-        letter-spacing: 0.3rem; 
-        transform: scale(1.1); 
+        letter-spacing: 0.3rem;
+        transform: scale(1.1);
     }
     100% {
-        opacity: 0; 
-        letter-spacing: 1rem; 
-        transform: scale(0.8); 
+        opacity: 0;
+        letter-spacing: 1rem;
+        transform: scale(0.8);
     }
 }
 
 .deal-item {
-    text-align: center;
-    flex: 1 1 calc(25% - 20px); 
-    max-width: 300px; 
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .circle-icon {
     width: 300px;
     height: 300px;
-    border-radius: 50%; 
+    border-radius: 50%;
     background-color: #f8f9fa;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden; 
+    overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
 }
 
 .circle-icon:hover {
-    transform: scale(1.1); 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .circle-icon img {
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    object-fit: cover; 
-    border-radius: 50%; 
-}
-
-h5 {
-    font-size: 1rem;
-    font-weight: 600;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .deal-link {
@@ -471,10 +486,11 @@ h5 {
     text-decoration: underline;
 }
 
+/* Opcional: estilos del carrusel si los usas */
 .carousel-inner img {
-    border-radius: 10px; 
-    object-fit: cover; 
-    height: 500px; 
+    border-radius: 10px;
+    object-fit: cover;
+    height: 500px;
 }
 
 .carousel-indicators button {
@@ -537,31 +553,31 @@ p.text-success {
 }
 
 @media (max-width: 767.98px) {
-  .producto-centrado-movil {
+.producto-centrado-movil {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
+}
 
-  .producto-centrado-movil h2,
-  .producto-centrado-movil p,
-  .producto-centrado-movil .input-group,
-  .producto-centrado-movil .btn,
-  .producto-centrado-movil a {
+.producto-centrado-movil h2,
+.producto-centrado-movil p,
+.producto-centrado-movil .input-group,
+.producto-centrado-movil .btn,
+.producto-centrado-movil a {
     width: 100%;
     justify-content: center;
-  }
+}
 
-  .producto-centrado-movil .d-flex {
+.producto-centrado-movil .d-flex {
     justify-content: center !important;
     flex-wrap: wrap;
-  }
+}
 
-  .producto-centrado-movil .input-group {
+.producto-centrado-movil .input-group {
     max-width: 150px;
     margin: 0 auto;
-  }
+}
 }
   
 /* Estilo temporizador */
@@ -623,27 +639,27 @@ p.text-success {
 
 /* Responsive ajustes */
 @media (max-width: 576px) {
-  .temporizador-tmp {
+.temporizador-tmp {
     height: 220px;
-  }
+}
 
-  .temporizador-content h1 {
+.temporizador-content h1 {
     font-size: 1rem;
     line-height: 1.4;
-  }
+}
 
-  .countdown-timer {
+.countdown-timer {
     font-size: 2rem;
     gap: 1rem;
-  }
+}
 
-  .countdown-timer > div {
+.countdown-timer > div {
     min-width: 60px;
-  }
+}
 
-  .temporizador-video {
+.temporizador-video {
     object-position: center;
-  }
+}
 }
 
 /* Estilo Descubre más*/
@@ -702,12 +718,12 @@ p.text-success {
 }
 
 @media (max-width: 768px) {
-  .high-quality {
+.high-quality {
     background-attachment: scroll; /* Evita el parpadeo en móviles */
     height: 40vh; /* Altura más razonable en móviles */
     background-position: center center;
     background-size: cover;
-  }
+}
 }
 
 /* Estilo productos fila1 y fila2 */
@@ -787,25 +803,25 @@ p.text-success {
 }
 
 @media (max-width: 768px) {
-  .container-products .row {
+.container-products .row {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  .container-products .col {
+.container-products .col {
     width: 90%;  /* O 100% si quieres que ocupe toda la pantalla */
     max-width: 300px;
     margin-bottom: 30px;
-  }
+}
 
-  .product {
+.product {
     width: 100%;
-  }
+}
 
-  .btn-product {
+.btn-product {
     width: 100%;
-  }
+}
 }
 
 /* Estilo Rebajas de invierno */
@@ -840,25 +856,25 @@ p.text-success {
 
 /* Versión móvil */
 @media (max-width: 767.98px) {
-  .sale-container {
+.sale-container {
     text-align: center;
-  }
+}
 
-  .sale-divider {
+.sale-divider {
     border-left: none;
     border-top: 1px solid #999;
     width: 60%;
     height: 0;
     margin: 20px auto;
-  }
+}
 
-  .sale-title {
+.sale-title {
     font-size: 32px;
-  }
+}
 
-  .sale-text {
+.sale-text {
     font-size: 15px;
-  }
+}
 }
 
 /* Estilo banner pequeño */
@@ -1081,30 +1097,30 @@ p.text-success {
 }
 
 @media (max-width: 768px) {
-  .card-custom {
+.card-custom {
     width: 80vw; /* quepa cómodamente en la pantalla móvil */
-  }
+}
 
-  .card-custom img {
+.card-custom img {
     height: 60vh; /* más razonable para móvil */
-  }
+}
 
-  .section-header h2 {
+.section-header h2 {
     font-size: 1.8rem; /* reducir título */
-  }
+}
 
-  .section-header p {
+.section-header p {
     font-size: 0.95rem;
-  }
+}
 
-  .nav-arrows {
+.nav-arrows {
     justify-content: center; /* centrar flechas */
     gap: 40px;
-  }
+}
 
-  .nav-arrows button {
+.nav-arrows button {
     font-size: 1.8rem; /* tamaño más amigable */
-  }
+}
 }
 
 /* Estilo para los simbolos de venta*/
