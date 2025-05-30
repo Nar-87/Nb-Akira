@@ -1,6 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Estilo barra de anuncios */
@@ -531,6 +535,34 @@ p.text-success {
     transform: scale(1.1); 
     box-shadow: 0 0 10px rgba(212, 175, 55, 0.6); 
 }
+
+@media (max-width: 767.98px) {
+  .producto-centrado-movil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .producto-centrado-movil h2,
+  .producto-centrado-movil p,
+  .producto-centrado-movil .input-group,
+  .producto-centrado-movil .btn,
+  .producto-centrado-movil a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .producto-centrado-movil .d-flex {
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+
+  .producto-centrado-movil .input-group {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+}
   
 /* Estilo temporizador */
 .temporizador-tmp {
@@ -540,7 +572,7 @@ p.text-success {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .temporizador-video {
@@ -549,7 +581,7 @@ p.text-success {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     z-index: 1;
 }
 
@@ -559,24 +591,59 @@ p.text-success {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 
 .temporizador-content {
     position: relative;
-    z-index: 3; 
+    z-index: 3;
     text-align: center;
+    padding: 0 10px;
 }
 
 .countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     font-size: 4rem;
     font-weight: bold;
+    flex-wrap: nowrap; /* ¡clave! evita que se apile en móvil */
+}
+
+.countdown-timer > div {
+    min-width: 80px;
 }
 
 .countdown-label {
     font-size: 1rem;
     margin-top: -10px;
+}
+
+/* Responsive ajustes */
+@media (max-width: 576px) {
+  .temporizador-tmp {
+    height: 220px;
+  }
+
+  .temporizador-content h1 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .countdown-timer {
+    font-size: 2rem;
+    gap: 1rem;
+  }
+
+  .countdown-timer > div {
+    min-width: 60px;
+  }
+
+  .temporizador-video {
+    object-position: center;
+  }
 }
 
 /* Estilo Descubre más*/
@@ -632,6 +699,15 @@ p.text-success {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .high-quality {
+    background-attachment: scroll; /* Evita el parpadeo en móviles */
+    height: 40vh; /* Altura más razonable en móviles */
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 /* Estilo productos fila1 y fila2 */
@@ -710,35 +786,79 @@ p.text-success {
     color: white; 
 }
 
+@media (max-width: 768px) {
+  .container-products .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-products .col {
+    width: 90%;  /* O 100% si quieres que ocupe toda la pantalla */
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .btn-product {
+    width: 100%;
+  }
+}
+
 /* Estilo Rebajas de invierno */
 .sale-section {
-    padding: 50px 0; 
+  padding: 50px 0;
 }
 
 .sale-container {
-    background-color: #dfac60;
-    padding: 40px 40px; 
-    display: flex;
-    align-items: center;
+  background-color: #dfac60;
+  padding: 40px;
+  display: flex;
+  gap: 20px;
 }
 
 .sale-title {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1;
-    color: #000;
-    text-align: left;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
 }
 
 .sale-divider {
-    border-left: 1px solid #999; 
-    height: 100px;
-    margin: 0 30px;
+  border-left: 1px solid #999;
+  height: 100px;
+  margin: 0 30px;
 }
 
 .sale-text {
-    font-size: 16px;
-    color: #333;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Versión móvil */
+@media (max-width: 767.98px) {
+  .sale-container {
+    text-align: center;
+  }
+
+  .sale-divider {
+    border-left: none;
+    border-top: 1px solid #999;
+    width: 60%;
+    height: 0;
+    margin: 20px auto;
+  }
+
+  .sale-title {
+    font-size: 32px;
+  }
+
+  .sale-text {
+    font-size: 15px;
+  }
 }
 
 /* Estilo banner pequeño */
@@ -752,6 +872,13 @@ p.text-success {
     display: flex; 
     align-items: center; 
     justify-content: center; 
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 25vh;
+    background-position: top;
+  }
 }
 
 /* Estilo para las 3 tarjetas */
@@ -953,6 +1080,33 @@ p.text-success {
     margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+  .card-custom {
+    width: 80vw; /* quepa cómodamente en la pantalla móvil */
+  }
+
+  .card-custom img {
+    height: 60vh; /* más razonable para móvil */
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem; /* reducir título */
+  }
+
+  .section-header p {
+    font-size: 0.95rem;
+  }
+
+  .nav-arrows {
+    justify-content: center; /* centrar flechas */
+    gap: 40px;
+  }
+
+  .nav-arrows button {
+    font-size: 1.8rem; /* tamaño más amigable */
+  }
+}
+
 /* Estilo para los simbolos de venta*/
 .features-section .icon i {
     font-size: 5rem; 
@@ -1015,12 +1169,14 @@ p.text-success {
 }
 
 #map-container {
-    width: 400px;
-    height: 200px;
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
-    overflow: hidden; 
-    margin-top: 15px; 
+    width: 100%;
+    max-width: 400px; /* límite para escritorio */
+    height: auto;
+    aspect-ratio: 2 / 1; /* mantiene proporción */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 15px;
 }
 
 .payment-icon {
