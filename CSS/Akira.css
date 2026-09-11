@@ -276,27 +276,72 @@ body {
     object-fit: cover; 
 }
 
-/* === CAMBIOS SOLO PARA MÓVIL === */
-@media screen and (max-width: 600px) {
-/* Barra de anuncios en fila, sin saltos y con scroll horizontal */
+
+/* =================================
+   CABECERA FIJA
+   ================================= */
+
 .barraanuncios {
-    display: flex !important;        /* fuerza flex solo en móvil */
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    gap: 1rem !important;
-    white-space: nowrap !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
 }
 
-/* Los enlaces dentro de la barra, que no se encojan */
-.barraanuncios a {
-    flex-shrink: 0 !important;
+.navbar {
+    position: fixed !important;
+    top: 73px !important;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
 }
 
-/* Logo más grande */
-.navbar-brand img {
-    max-height: 5rem !important;
-    transition: max-height 0.3s ease;
+.video-container {
+    margin-top: 73px;
 }
+
+
+/* =================================
+   MENÚ HAMBURGUESA EN MÓVIL
+   ================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* La barra de anuncios vuelve a su comportamiento normal */
+    .barraanuncios {
+        display: block !important;
+        overflow: visible !important;
+    }
+
+    /* En móvil la barra de anuncios ocupa más altura */
+    .navbar {
+        top: 120px !important;
+    }
+
+    .video-container {
+        margin-top: 120px;
+    }
+
+    /* Menú desplegable */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        z-index: 1101;
+        padding: 1rem 0;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.8rem 0;
+    }
 }
 
 /*Carrusel texto*/
