@@ -308,15 +308,23 @@ body {
 
 @media screen and (max-width: 600px) {
 
-    /* La barra de anuncios vuelve a su comportamiento normal */
     .barraanuncios {
         display: block !important;
         overflow: visible !important;
+        min-height: 120px;
+    }
+
+    .barraanuncios .carousel-item {
+        min-height: 50px;
+    }
+
+    .barraanuncios .carousel-text {
+        margin-bottom: 0;
     }
 
     /* En móvil la barra de anuncios ocupa más altura */
     .navbar {
-        top: 120px !important;
+        top: 150px !important;
     }
 
     .video-container {
@@ -341,6 +349,11 @@ body {
 
     .navbar-nav .nav-link {
         padding: 0.8rem 0;
+    }
+
+    .barraanuncios .carousel-text {
+        white-space: nowrap;
+        font-size: 1rem;
     }
 }
 
