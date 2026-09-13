@@ -1,18 +1,10 @@
-
-/* =================================
-   EVITAR DESBORDAMIENTO HORIZONTAL
-   ================================= */
-
 html,
 body {
     width: 100%;
     overflow-x: hidden;
 }
 
-
-/* =================================
-   ESPACIO PARA LA CABECERA
-   ================================= */
+/* ESPACIO PARA LA CABECERA */
 
 main {
     margin-top: 145px;
@@ -321,7 +313,7 @@ main {
         padding: 0.8rem 0;
     }
 
-        .barraanuncios .carousel-text {
+    .barraanuncios .carousel-text {
         white-space: nowrap;
         font-size: 1rem;
     }

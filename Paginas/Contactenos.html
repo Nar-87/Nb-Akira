@@ -17,8 +17,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
-    <div class="container-fluid">
-
     <header class="header">
       <!-- Barra de anuncios -->
       <div class="barraanuncios container-fluid text-center">
@@ -42,18 +40,18 @@
             </a>
           </div>
           <!-- Carrusel anuncios -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-6 d-flex align-items-center justify-content-center text-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-6 d-flex align-items-center justify-content-center text-center">
             <div id="carouselExampleSlidesOnly" class="carousel slide text-center" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <a href="Paginas/Productos.html" title="All Products" class="carousel-link" target="_blank">
+                  <a href="../Paginas/Productos.html" title="All Products" class="carousel-link" target="_blank">
                     <p class="carousel-text">
                       <strong>¡Suscríbete</strong> y Ahorra un 10% en tu Primera Compra!
                     </p>
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="Paginas/Productos.html" title="All Products" class="carousel-link" target="_blank">
+                  <a href="../Paginas/Productos.html" title="All Products" class="carousel-link" target="_blank">
                     <p class="carousel-text">
                       <strong>¡Envios Gratis</strong> en Enero!
                     </p>
@@ -65,10 +63,10 @@
 
           <!-- Mini-menu -->               
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-start">
-            <a href="Paginas/Faqs.html" title="Preguntas Frecuentes" class="mini-menu mx-2" target="_blank">
+            <a href="../Paginas/Faqs.html" title="Preguntas Frecuentes" class="mini-menu mx-2" target="_blank">
               <p>Faq</p>
             </a>
-            <a href="Paginas/Contactenos.html" title="Contáctenos" class="mini-menu mx-2" target="_blank">
+            <a href="../Paginas/Contactenos.html" title="Contáctenos" class="mini-menu mx-2" target="_blank">
               <p>Contáctenos</p>
             </a>
           </div>
@@ -76,12 +74,12 @@
       </div>
       
         <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 w-100">
         <div class="container-fluid">
           <div class="row w-100 align-items-center">
             <!-- Columna del logo -->
             <div class="col-3 col-md-2 text-start">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand" href="../index.html">
                 <img src="../Imagenes/logo-no-background.png" alt="Logo" class="img-fluid">
               </a>
             </div>
@@ -93,24 +91,24 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="Paginas/Productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="../Paginas/Productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Catálogo
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="Paginas/Productos.html" target="_blank">Automáticos</a></li>
-                      <li><a class="dropdown-item" href="Paginas/Productos.html" target="_blank">Mecánicos</a></li>
-                      <li><a class="dropdown-item" href="Paginas/Productos.html" target="_blank">Cronógrafos</a></li>
+                      <li><a class="dropdown-item" href="../Paginas/Productos.html" target="_blank">Automáticos</a></li>
+                      <li><a class="dropdown-item" href="../Paginas/Productos.html" target="_blank">Mecánicos</a></li>
+                      <li><a class="dropdown-item" href="../Paginas/Productos.html" target="_blank">Cronógrafos</a></li>
                       <li><hr class="dropdown-divider"></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Paginas/Productos.html" target="_blank">Ofertas especiales</a>
+                    <a class="nav-link" href="../Paginas/Productos.html" target="_blank">Ofertas especiales</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Paginas/Nosotros.html" target="_blank">Nosotros</a>
+                    <a class="nav-link" href="../Paginas/Nosotros.html" target="_blank">Nosotros</a>
                   </li>
                 </ul>
               </div>
@@ -181,7 +179,8 @@
     <footer class="footer">
       <div class="container-fluid">
           <div class="row">
-              <div class="col-md-5 text-md-start">
+            <!-- Parte izquierda -->
+              <div class="col-12 col-md-5 text-md-start">
                 <h6 class="text-uppercase fw-bold mb-4">Nuestra ubicación</h6>
                 <div id="map-container">
                   <iframe
@@ -195,24 +194,24 @@
                   </iframe>
                 </div>
               </div>              
-              <div class="col-md-3 text-md-star">
+              <div class="col-12 col-md-3 text-md-start">
                   <h6>Ayuda</h6>
                   <ul class="list-unstyled">
-                      <li><a href="Paginas/Faqs.html" target="_blank">FAQ</a></li>
-                      <li><a href="Paginas/Contactenos.html" target="_blank">Contacto</a></li>
-                      <li><a href="Paginas/Productos.html" target="_blank">Rebajas</a></li>
+                      <li><a href="../Paginas/Faqs.html" target="_blank">FAQ</a></li>
+                      <li><a href="../Paginas/Contactenos.html" target="_blank">Contacto</a></li>
+                      <li><a href="../Paginas/Productos.html" target="_blank">Rebajas</a></li>
                   </ul>
                   <br>
                   <h6 class="mt-3">Descubre</h6>
                   <ul class="list-unstyled">
-                      <li><a href="Paginas/Nosotros.html" target="_blank">Sobre Nosotros</a></li>
+                      <li><a href="../Paginas/Nosotros.html" target="_blank">Sobre Nosotros</a></li>
                       <li><a href="#">Devoluciones y reembolsos</a></li>
                       <li><a href="#">Privacy Policy</a></li>
                       <li><a href="#">Terms & Conditions</a></li>
                   </ul>
               </div>
               <!-- Parte derecha -->
-              <div class="col-md-4 text-md-end">
+              <div class="col-12 col-md-4 text-md-end">
                   <h6>SUSCRÍBETE PARA OFERTAS Y OBTÉN UN 10% DE DESCUENTO</h6>
                   <form class="footer-bottom">
                     <input type="email" class="form-control me-2" placeholder="Nombre">
@@ -232,7 +231,7 @@
                   <a href="https://www.pinterest.es/nbakirastore/" target="_blank"><i class="bi bi-pinterest"></i></a>
                   <a href="https://www.youtube.com/channel/UCsQ1uK-OdZNOOMBlrB840qw" target="_blank"><i class="bi bi-youtube"></i></a>
               </div>
-              <div class="col-md-6 text-md-end">
+              <div class="col-12 col-md-6 text-md-end">
                   <img src="../Imagenes/visa.png" alt="Visa" class="payment-icon">
                   <img src="../Imagenes/master.png" alt="MasterCard" class="payment-icon">
                   <img src="../Imagenes/amex.png" alt="Amex" class="payment-icon">
@@ -251,7 +250,18 @@
         searchIcon.addEventListener('click', () => {
           searchInput.classList.toggle('active'); 
         });
-      </script>       
-    </div>
+      </script> 
+      <script>
+        // Carrito de compra en horizontal
+        const scrollContainer = document.getElementById("scrollContainer");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");  
+        prevBtn.addEventListener("click", () => {
+            scrollContainer.scrollBy({ left: -300, behavior: "smooth" });
+        });
+        nextBtn.addEventListener("click", () => {
+            scrollContainer.scrollBy({ left: 300, behavior: "smooth" });
+        });
+    </script>         
 </body>
 </html>
