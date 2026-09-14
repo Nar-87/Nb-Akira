@@ -325,12 +325,12 @@ main {
 
 /* Main */
 /* Estilo para las imagenes */
-.img-fluid {
+/*.img-fluid {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-}
+} comento bloque porque modifica el menú*/
   
 .rounded {
     border-radius: 0.5rem;
