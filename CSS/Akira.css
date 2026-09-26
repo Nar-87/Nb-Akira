@@ -9,6 +9,23 @@ body {
   padding: 0;
 }
 
+/*especial para las páginas de detalles-relojes*/
+.detalle-main {
+    margin-top: 180px;
+}
+
+@media (max-width: 991px) {
+    .detalle-main {
+        margin-top: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .detalle-main {
+        margin-top: 250px;
+    }
+}
+
 /* Estilo barra de anuncios */
 .barraanuncios {
     background-color: black; 
